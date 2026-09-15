@@ -1,5 +1,5 @@
-# Name: 
-# Period:
+# Name: angie
+# Period:pm
 # Python Skills Check — Slides 1–60
 
 # ============================================================
@@ -30,7 +30,7 @@
 #
 # This is my first comment
 
-
+# this is my first comment
 
 # TASK 2:
 # Below, use print() to display:
@@ -39,7 +39,7 @@
 #
 # Make sure Python treats the words as text.
 
-
+print("Python Skills Check")
 
 # TASK 3:
 # Write THREE separate print() statements.
@@ -54,7 +54,9 @@
 # The first two should be text.
 # The third should be a number.
 
-
+print("Angie")
+print("spaghetti from olive garden")
+print("67")
 
 # ============================================================
 # SECTION 2 — CREATING VARIABLES
@@ -67,7 +69,7 @@
 #
 # Store YOUR name inside the variable.
 
-
+student_name = ("angie")
 
 # TASK 5:
 # Create a variable named:
@@ -78,7 +80,7 @@
 #
 # Do NOT put quotation marks around the value.
 
-
+student_age = int(17)
 
 # TASK 6:
 # Create a variable named:
@@ -91,7 +93,7 @@
 #
 # Think about what type of data this is.
 
-
+account_balance = float(125.75)
 
 # TASK 7:
 # Create a variable named:
@@ -102,7 +104,7 @@
 #
 # Be careful with capitalization and quotation marks.
 
-
+is_learning_python = True
 
 # TASK 8:
 # Print all FOUR variables you created in Tasks 4–7.
@@ -113,7 +115,10 @@
 # Print the VALUES stored in the variables,
 # not the names of the variables.
 
-
+print("name:" ,student_name)
+print("age:" ,student_age)
+print("balance:" ,account_balance)
+print("learning python?:" ,is_learning_python)
 
 # ============================================================
 # SECTION 3 — DATA TYPES
@@ -136,7 +141,10 @@
 #
 # You choose the values.
 
-
+whole_number = int(8)
+decimal_number = float(25.5)
+message = ("676767677676767")
+answer = False
 
 # TASK 10:
 # Create a variable named:
@@ -153,7 +161,8 @@
 # Is tricky_number storing a number that Python can currently
 # perform arithmetic with, or is it storing a String?
 
-
+tricky_number = "500" 
+# this is a STRING, because we have no int or float code suggesting its a number, alongside the "" that define a string
 
 # TASK 11:
 # Print tricky_number.
@@ -169,7 +178,9 @@
 # The output may look similar, but the two variables
 # should NOT contain the same data type.
 
-
+print(tricky_number)
+actual_number = int(500)
+print(actual_number)
 
 # ============================================================
 # SECTION 4 — ARITHMETIC WITH VARIABLES
@@ -193,6 +204,9 @@
 #
 # Python must perform the calculation.
 
+number_one = int(45)
+number_two = int(17)
+total = number_one + number_two
 
 
 # TASK 13:
@@ -204,6 +218,7 @@
 # Store the result of subtracting number_two
 # from number_one.
 
+difference = number_one - number_two
 
 
 # TASK 14:
@@ -213,6 +228,7 @@
 #
 # Store the result of multiplying the two numbers.
 
+product = number_one * number_two
 
 
 # TASK 15:
@@ -222,6 +238,7 @@
 #
 # Store the result of dividing number_one by number_two.
 
+quotient = number_one / number_two
 
 
 # TASK 16:
@@ -234,7 +251,10 @@
 #
 # Use four separate print statements.
 
-
+print(total)
+print(difference)
+print(product)
+print(quotient)
 
 # ============================================================
 # SECTION 5 — CALCULATIONS THAT REQUIRE THINKING
@@ -255,7 +275,11 @@
 #
 # Do NOT manually type the answer.
 
+price = int(14)
+quantity = int(7)
 
+purchase_total = price * quantity
+print(purchase_total)
 
 # TASK 18:
 # Create:
@@ -271,7 +295,11 @@
 #
 # Determine the correct calculation yourself.
 
+money = float(500)
+people = int(8)
 
+money_per_person = money / people
+print(money_per_person)
 
 # TASK 19:
 # Create:
@@ -287,7 +315,11 @@
 #
 # Use the variables in your calculation.
 
+starting_balance = float(850)
+amount_spent = float(237)
 
+remaining_balance = starting_balance - amount_spent
+print(remaining_balance)
 
 # TASK 20:
 # Create:
@@ -303,7 +335,11 @@
 #
 # Do NOT manually calculate the answer.
 
+boxes = int(12)
+items_per_box = int(24)
 
+total_items = boxes * items_per_box
+print(total_items)
 
 # ============================================================
 # SECTION 6 — REUSING VARIABLES
@@ -321,7 +357,11 @@
 #
 # Calculate one day's pay.
 
+hourly_pay = int(20)
+hours_worked = int(8)
 
+daily_pay = hourly_pay * hours_worked
+print("daily pay:" ,daily_pay)
 
 # TASK 22:
 # Now create:
@@ -335,7 +375,8 @@
 #
 # Do NOT redo the calculation from Task 21.
 
-
+weekly_pay = daily_pay * int(5)
+print("weekly pay:" ,weekly_pay)
 
 # TASK 23:
 # Create:
@@ -350,8 +391,8 @@
 #
 # Do NOT use hourly_pay or hours_worked in this calculation.
 
-
-
+monthly_pay = weekly_pay * int(4)
+print("monthly pay:" ,monthly_pay)
 # TASK 24:
 # Create:
 #
@@ -366,7 +407,8 @@
 #
 # and one number.
 
-
+yearly_pay = monthly_pay * int(12)
+print("yearly pay:" ,yearly_pay)
 
 # ============================================================
 # SECTION 7 — STRINGS
@@ -380,7 +422,8 @@
 #
 # Store your first and last name as Strings.
 
-
+first_name = ("Angelina")
+last_name = ("Kireeva")
 
 # TASK 26:
 # Create:
@@ -396,12 +439,13 @@
 #
 # Do NOT manually type your full name again.
 
+full_name = first_name + " " + last_name
 
 
 # TASK 27:
 # Print full_name.
 
-
+print(full_name)
 
 # TASK 28:
 # Create:
@@ -420,7 +464,8 @@
 # You may NOT manually type "Python Programming"
 # into course_name.
 
-
+word_one = "Python"
+word_two = "Programming"
 
 # ============================================================
 # SECTION 8 — USER INPUT
@@ -434,7 +479,7 @@
 # Ask the user to enter their name.
 #
 # Store their answer inside user_name.
-
+user_name = input("What's your name?:")
 
 
 # TASK 30:
@@ -447,7 +492,7 @@
 #
 # The program must work no matter what name is entered.
 
-
+print("Hello," ,user_name)
 
 # TASK 31:
 # Create:
@@ -456,7 +501,7 @@
 #
 # Ask the user for their favorite food.
 
-
+favorite_food = input("What's your favorite food?:")
 
 # TASK 32:
 # Create a personalized message using:
@@ -472,7 +517,7 @@
 #
 # Do NOT manually type the user's answers.
 
-
+print( user_name, "likes" ,favorite_food)
 
 # ============================================================
 # SECTION 9 — INPUT + DATA CONVERSION
@@ -493,7 +538,7 @@
 # Remember that input() gives you a String.
 # Figure out what conversion is needed.
 
-
+user_age = int(input("How old are you?:"))
 
 # TASK 34:
 # Create:
@@ -507,7 +552,8 @@
 #
 # Do NOT ask for their age again.
 
-
+age_next_year =  1 + user_age
+print("Age in a year:" ,age_next_year)
 
 # TASK 35:
 # Create:
@@ -518,7 +564,8 @@
 #
 # Do NOT ask another question.
 
-
+age_in_ten_years = 10 + user_age
+print("Age in ten years:" ,age_in_ten_years)
 
 # ============================================================
 # SECTION 10 — MULTIPLE USER INPUTS
@@ -533,6 +580,7 @@
 #
 # Make sure Python can perform arithmetic with it.
 
+first_user_number = int(input("Pick a whole number!:"))
 
 
 # TASK 37:
@@ -542,7 +590,7 @@
 #
 # second_user_number
 
-
+second_user_number = int(input("Pick another whole number!:"))
 
 # TASK 38:
 # Using ONLY those two variables, create:
@@ -555,15 +603,20 @@
 # Each variable should contain the result of a
 # DIFFERENT arithmetic operation.
 
-
+user_sum = first_user_number + second_user_number
+user_difference = first_user_number - second_user_number
+user_product = first_user_number * second_user_number
+user_quotient =  first_user_number / second_user_number
 
 # TASK 39:
 # Print all four answers.
 #
 # Your program must work with different numbers entered
 # by different users.
-
-
+print(user_sum)
+print(user_difference)
+print (user_product)
+print(user_quotient)
 
 # ============================================================
 # SECTION 11 — HARDER MULTI-STEP CALCULATIONS
@@ -576,7 +629,7 @@
 #
 # work_hours
 
-
+work_hours = float(input("How many hours do you work in ONE day?:"))
 
 # TASK 41:
 # Ask the user how much money they earn PER HOUR.
@@ -588,7 +641,7 @@
 # THINK:
 # A pay rate could contain cents.
 
-
+hourly_rate = float(input("How much do you earn PER HOUR?:"))
 
 # TASK 42:
 # Create:
@@ -597,7 +650,7 @@
 #
 # Calculate how much the person earns in one day.
 
-
+one_day_pay = work_hours * hourly_rate
 
 # TASK 43:
 # Create:
@@ -612,7 +665,7 @@
 #
 # Do NOT repeat your previous calculation.
 
-
+five_day_pay = one_day_pay * 5
 
 # TASK 44:
 # Create:
@@ -626,7 +679,10 @@
 # You will need to decide whether another variable
 # is necessary before you can perform the calculation.
 
+money_spent = float(input("How much money do you usually spend?:"))
+money_after_spending = five_day_pay - money_spent
 
+print("Money after spending:" ,money_after_spending)
 
 # ============================================================
 # SECTION 12 — REVERSE THINKING
@@ -646,7 +702,10 @@
 #
 # Determine the price of ONE item.
 
-
+total_cost = 360
+number_of_items = 12
+cost_per_item = total_cost / number_of_items
+print("cost per item:" , cost_per_item)
 
 # TASK 46:
 # Create:
@@ -661,7 +720,10 @@
 # Determine how many miles were traveled during
 # each hour.
 
-
+total_distance = 450
+hours = 6
+distance_per_hour = total_distance / hours
+print("distance per hour:" ,distance_per_hour)
 
 # TASK 47:
 # Create:
@@ -675,7 +737,10 @@
 #
 # Assume students are divided equally.
 
-
+total_students = 120
+classrooms = 5
+students_per_classroom = total_students / classrooms
+print("students per classroom:" ,students_per_classroom)
 
 # ============================================================
 # SECTION 13 — MORE ADVANCED VARIABLE REUSE
@@ -693,7 +758,11 @@
 #
 # Calculate the subtotal.
 
+item_price = 18
+number_purchased = 5
 
+subtotal = item_price * number_purchased
+print("subtotal:" ,subtotal)
 
 # TASK 49:
 # Create:
@@ -707,7 +776,9 @@
 # REQUIREMENT:
 # Use subtotal and shipping_cost.
 
-
+shipping_cost = 12
+total_with_shipping = subtotal + shipping_cost
+print("total + shipping:" ,total_with_shipping)
 
 # TASK 50:
 # Create:
@@ -725,7 +796,9 @@
 #
 # Do NOT redo either of the previous calculations.
 
-
+amount_paid = 150
+change_recieved = amount_paid - total_with_shipping
+print("change:" , change_recieved)
 
 # ============================================================
 # SECTION 14 — STRING + NUMBER CHALLENGE
@@ -744,7 +817,8 @@
 #
 # Make sure you can perform arithmetic with it.
 
-
+current_year = 2026
+birth_year = int(input("What year were you born in?:"))
 
 # TASK 52:
 # Create:
@@ -753,7 +827,7 @@
 #
 # Calculate the user's approximate age.
 
-
+approximate_age = current_year - birth_year
 
 # TASK 53:
 # Create a variable named:
@@ -764,7 +838,7 @@
 #
 # Do NOT manually type their age as text.
 
-
+age_as_string= str(approximate_age)
 
 # TASK 54:
 # Create:
@@ -783,7 +857,8 @@
 #
 # Think carefully about the data types involved.
 
-
+age_message = "You are approximately" ,age_as_string, "years old."
+print(age_message)
 
 # ============================================================
 # SECTION 15 — FINAL CHALLENGES
@@ -804,7 +879,10 @@
 #
 # Add all three numbers together.
 
-
+number1 = int(input("Pick your first number:"))
+number2 = int(input("Pick your second number:"))
+number3 = int(input("Pick your third number:"))
+combined_total = number1 + number2 + number3
 
 # TASK 56:
 # Create:
@@ -818,7 +896,8 @@
 #
 # Do NOT add number1, number2, and number3 together again.
 
-
+average =  combined_total / 3
+print("average:" ,average)
 
 # TASK 57:
 # Create:
@@ -830,7 +909,8 @@
 # REQUIREMENT:
 # Use average.
 
-
+doubled_average = average * 2
+print("double average:" ,doubled_average)
 
 # TASK 58:
 # Create:
@@ -846,7 +926,8 @@
 #
 # in this calculation.
 
-
+final_answer = number1 - doubled_average
+print("final answer:" ,final_answer)
 
 # ============================================================
 # SECTION 16 — FIND THE PROBLEM
@@ -857,7 +938,9 @@
 #
 # Fix the line below so score stores the correct DATA TYPE.
 
-score = "95"
+# score = "95"
+# ew ^^^
+score = 95 
 
 
 
@@ -874,7 +957,9 @@ score = "95"
 # answer = user_number + 10
 # print(answer)
 
-
+user_number = int(input("Enter a number:"))
+answer = user_number + 10
+print(answer)
 
 # TASK 61:
 # The programmer wants the output:
@@ -888,7 +973,10 @@ score = "95"
 # total = first + second
 # print(total)
 
-
+first = 10
+second = 5
+total = first + second
+print(total)
 
 # TASK 62:
 # The programmer wants to print the VALUE stored in student.
@@ -899,7 +987,7 @@ student = "Alex"
 
 # print("student")
 
-
+print(student)
 
 # ============================================================
 # FINAL BOSS — CHECK FOR UNDERSTANDING
@@ -935,8 +1023,22 @@ student = "Alex"
 #
 # You may ONLY use concepts from slides 1–60.
 
+name = input("What is your first name?:")
+lname = input("What is your last name?:")
+byear = int(input("What is your birth year?:"))
+fnumber = int(input("What is your favorite number?:"))
 
+age = 2026 - byear
+fnumfin = fnumber * age
+fname = name + " " + lname 
 
+print("Hello,", name)
+print("Your full name is", fname)
+print("You were born in", byear)
+print("You are currently", age, "years old.")
+print("Your favorite number is", fnumber)
+print("The result of your favorite number multiplied by your age:", fnumfin)
+#favorite number final ^
 # ============================================================
 # GIT CHECK
 # ============================================================
